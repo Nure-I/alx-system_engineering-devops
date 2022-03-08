@@ -1,0 +1,1 @@
+Readme of shelll redirections
