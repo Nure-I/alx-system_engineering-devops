@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
-#prints a string 10 times
-x=0
-while [ $x != 10 ]
+# This script is displaying "Best School" 10 times using while
+# Displays bad luck for 4th loop iteration
+# Displays good luck for the 8th loop iteration
+c=1
+while [ $c -le 10 ]
 do
-  if [ $x = 3 ]
-  then
-    echo "bad luck"
-  elif [ $x = 7 ]
-  then
-    echo "good luck"
-  else
-    echo "Holberton School"
-  fi
-  x=$(( x + 1 ))
+	if [ $c -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $c -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((c++))	
 done

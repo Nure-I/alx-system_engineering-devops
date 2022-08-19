@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-#special ls
-
-for i in *
+#Script lists files in directory
+for c in *
 do
-    echo "$i" | cut -d '-' -f 2;
+	echo "$c" | cut -f 2- -d '-'
 done

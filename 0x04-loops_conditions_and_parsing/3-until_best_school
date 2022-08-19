@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-#prints a string 10 times
-
-number=0
-until [ $number -eq 10 ]
+# This script is displaying "Best School" 10 times using until
+c=0
+until [ $c -gt 9 ]
 do
-	echo "Holberton School"
-	number=$(( number + 1 ))
+	echo "Best School"
+	(( c++ ))  
 done
